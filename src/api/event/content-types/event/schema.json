@@ -44,6 +44,10 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "events"
+    },
+    "title": {
+      "type": "string",
+      "required": true
     }
   }
 }
