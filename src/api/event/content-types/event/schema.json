@@ -25,7 +25,7 @@
     },
     "institution": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "price": {
       "type": "decimal",
@@ -48,6 +48,21 @@
     "title": {
       "type": "string",
       "required": true
+    },
+    "genre": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::genre.genre",
+      "inversedBy": "events"
+    },
+    "location": {
+      "type": "text"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "eventOrganisationDescription": {
+      "type": "text"
     }
   }
 }
